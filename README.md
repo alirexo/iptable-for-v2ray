@@ -47,7 +47,8 @@ This article is only an educational article and its use in an inappropriate way 
      `iptables -t nat -A POSTROUTING -j MASQUERADE`</br></br>
      `exit 0`</br></br></br>
 
-      Now we need to give local full access, which will run automatically every time our local server is restarted
+      Now we need to give local full access, which will run automatically every time our local server is restarted</br>
+
       `sudo chmod +x /etc/rc.local`</br></br></br>
 
     
