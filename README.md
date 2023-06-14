@@ -36,8 +36,15 @@ This article is only an educational article and its use in an inappropriate way 
   
   
  - Use the following commands to prevent ip forwarding from being interrupted after server reboot</br></br>
-     First, we create a local with the following command and put the commands in it and save it
-    `python ReportBot.py`</br></br>
+     First, we create a local with the following command and put the commands in it and save it: </br></br>
+    `sudo nano /etc/rc.local`</br></br></br>
+     #! /bin/bash
+     `sysctl net.ipv4.ip_forward=1
+      iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination IP IRAN
+      iptables -t nat -A PREROUTING -j DNAT --to-destination IP KHAREJ
+      iptables -t nat -A POSTROUTING -j MASQUERADE
+      exit 0`
+    
  
 
   <p align="center">The last update of the robot is on 08/18/2022 and from now on no update will be published for this robot and it may not work anymore.</p>
