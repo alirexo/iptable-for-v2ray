@@ -2,17 +2,13 @@
 
 <h3><p align="center">Rules</p></h3>
 
-A bot made with Python language that can be used to close and delete Instagram pages in the fastest way.
-
-The robot is only for an educational project
-
-<b>(!! Any illegal use of the robot is the responsibility of the audience !!)</b></br></br>
+This article is only an educational article and its use in an inappropriate way and violation of the rules is the responsibility of the user .
  
  
   
 <h3><p align="left">Prerequisite</p></h3>
   
-- !Before using the robot, one of the versions of <b>python 3.7</b> and above must be installed on your system.</br></br>
+- !Before doing anything, you must have purchased two <b>VPS with different locations and both IPs should be <b>healthy and clean</b>.</br></br>
  
 
   
