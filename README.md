@@ -25,8 +25,7 @@ This article is only an educational article and its use in an inappropriate way 
  
  - Server port forwarding</br>
 
-   Here, server 1 means the server on which we want to do port forwarding, and server 2 is the destination server:</br>
-   ب
+   Here, server 1 means the server on which we want to do port forwarding, and server 2 is the destination server: </br>
    `pip install -r requirements.txt`</br></br>
  
   
