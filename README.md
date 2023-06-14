@@ -37,15 +37,21 @@ This article is only an educational article and its use in an inappropriate way 
   
  - Use the following commands to prevent ip forwarding from being interrupted after server reboot</br></br>
      First, we create a local with the following command and put the commands in it and save it: </br></br>
+
     `sudo nano /etc/rc.local`</br></br></br>
-     #! /bin/bash
-     `sysctl net.ipv4.ip_forward=1
-      iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination IP IRAN
-      iptables -t nat -A PREROUTING -j DNAT --to-destination IP KHAREJ
-      iptables -t nat -A POSTROUTING -j MASQUERADE
-      exit 0`
+
+     `#! /bin/bash`</br></br>
+     `sysctl net.ipv4.ip_forward=1`</br></br>
+     `iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination IP IRAN`</br></br>
+     `iptables -t nat -A PREROUTING -j DNAT --to-destination IP KHAREJ`</br></br>
+     `iptables -t nat -A POSTROUTING -j MASQUERADE`</br></br>
+     `exit 0`</br></br></br>
+
+      Now we need to give local full access, which will run automatically every time our local server is restarted
+      `sudo chmod +x /etc/rc.local`</br></br></br>
+
     
  
 
-  <p align="center">The last update of the robot is on 08/18/2022 and from now on no update will be published for this robot and it may not work anymore.</p>
-  <b>Made by Ali Atabak (ReXo)</b> 
+  <p align="center">Congratulations, you have successfully created a tunnel through IP forwarding.</p>
+  <b>Written by Ali Atabak (ReXo)</b> 
