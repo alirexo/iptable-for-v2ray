@@ -55,4 +55,4 @@ This article is only an educational article and its use in an inappropriate way 
  
 
   <p align="center">Congratulations, you have successfully created a tunnel through IP forwarding.</p>
-  <b><p align="center></p>Written by Ali Atabak (ReXo)<p></b> 
+  <b><p align="center></p>Written by Ali Atabak (ReXo)</p></b> 
