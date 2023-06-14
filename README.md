@@ -25,13 +25,18 @@ This article is only an educational article and its use in an inappropriate way 
  
  - Server port forwarding</br>
 
-   Here, server 1 means the server on which we want to do port forwarding, and server 2 is the destination server: </br>
-   `pip install -r requirements.txt`</br></br>
+   Here, server 1 means the server on which we want to do port forwarding, and server 2 is the destination server: </br></br>
+
+   `sysctl net.ipv4.ip_forward=1`</br></br>
+   `iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination IP SERVER 1`</br></br>
+   `iptables -t nat -A PREROUTING -j DNAT --to-destination IP SERVER 2`</br></br>
+   `iptables -t nat -A POSTROUTING -j MASQUERADE`</br></br>
+    
  
   
   
- - Now run the bot
-  
+ - Use the following commands to prevent ip forwarding from being interrupted after server reboot</br></br>
+     First, we create a local with the following command and put the commands in it and save it
     `python ReportBot.py`</br></br>
  
 
