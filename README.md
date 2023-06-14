@@ -42,8 +42,8 @@ This article is only an educational article and its use in an inappropriate way 
 
      `#! /bin/bash`</br></br>
      `sysctl net.ipv4.ip_forward=1`</br></br>
-     `iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination IP IRAN`</br></br>
-     `iptables -t nat -A PREROUTING -j DNAT --to-destination IP KHAREJ`</br></br>
+     `iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination IP SERVER 1`</br></br>
+     `iptables -t nat -A PREROUTING -j DNAT --to-destination IP SERVER 2`</br></br>
      `iptables -t nat -A POSTROUTING -j MASQUERADE`</br></br>
      `exit 0`</br></br></br>
 
@@ -54,4 +54,4 @@ This article is only an educational article and its use in an inappropriate way 
  
 
   <p align="center">Congratulations, you have successfully created a tunnel through IP forwarding.</p>
-  <b>Written by Ali Atabak (ReXo)</b> 
+  <b><p align="center></p>Written by Ali Atabak (ReXo)<p></b> 
