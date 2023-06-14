@@ -23,8 +23,9 @@ This article is only an educational article and its use in an inappropriate way 
 
     $sudo apt install iptables</br></br>
  
- - Server port forwarding
-   Here, server 1 means the server on which we want to do port forwarding, and server 2 is the destination server:
+ - Server port forwarding</br>
+
+   Here, server 1 means the server on which we want to do port forwarding, and server 2 is the destination server:</br>
    ب
    `pip install -r requirements.txt`</br></br>
  
