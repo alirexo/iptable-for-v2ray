@@ -12,20 +12,21 @@ This article is only an educational article and its use in an inappropriate way 
  
 
   
-<h3><p align="left">Installation</p></h3></br>
+<h3><p align="left">Steps</p></h3></br>
 
-- Clone the repository first 
+- Getting root access on the server
    
-   `git clone https://github.com/alirexo/Instagram-Reporter-Bot.git`</br></br>
+   `sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && sudo systemctl restart ssh && sudo passwd`</br></br>
     
  
- - Now go to cloned directory and run `ReportBot.py`</br>
+ - Installing iptables on the server`</br>
 
-    $cd Instagram-Reporter-Bot</br></br>
+    $sudo apt install iptables</br></br>
  
- - Then install the libraries in the requirements.txt file
-  
-    `pip install -r requirements.txt`</br></br>
+ - Server port forwarding
+   Here, server 1 means the server on which we want to do port forwarding, and server 2 is the destination server:
+   ب
+   `pip install -r requirements.txt`</br></br>
  
   
   
