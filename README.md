@@ -1,4 +1,5 @@
-# تانل زدن بین سرور ایران و خارج کشور برای دور زدن نت ملی
+# Tunneling between two VPS using IPtable method
+
 <h3><p align="center">Rules</p></h3>
 
 A bot made with Python language that can be used to close and delete Instagram pages in the fastest way.
