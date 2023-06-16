@@ -50,8 +50,9 @@ This article is only an educational article and its use in an inappropriate way 
       Now we need to give local full access, which will run automatically every time our local server is restarted</br>
 
       `sudo chmod +x /etc/rc.local`</br></br></br>
-##
-      - Making vpn configuration Vpn</br></br>
+
+
+      ## Making vpn configuration Vpn </br></br>
       Now you need to install an x-ui panel on server 2 and select your desired port for example ( 443) </br></br>
       Now, by entering the ip of server 1 and the selected port for server 2, enter your panel and create your vpn configuration</br></br> `SERVER1:443` </br></br>
       <b>My advice to you is to put the IP servers behind the cloudflare subdomain</b></br></b></br>
